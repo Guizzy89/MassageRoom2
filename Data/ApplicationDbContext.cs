@@ -24,7 +24,7 @@ public class ApplicationDbContext : DbContext
 
         modelBuilder.Entity<Booking>().HasData(new Booking[]
         {
-            new Booking {Id = 1, SlotDate=new DateTime(2025,8,1,10,0,0), IsAvailable=true},
+            new Booking {Id = 1, SlotDate=new DateTime(2025,8,1,10,0,0), IsAvailable=true, ClientName="Анна Ивановна", PhoneNumber="+79007654321", Comment="Без комментариев"},
             new Booking {Id = 2, SlotDate=new DateTime(2025,8,1,12,0,0), IsAvailable=false, ClientName="Иван Иванов", PhoneNumber="+79001234567", Comment="Без комментариев"}
         });
     }
